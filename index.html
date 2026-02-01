@@ -18,6 +18,7 @@
 </head>
 
 <body>
+    <canvas id="particles-bg"></canvas>
 
     <nav class="navbar">
         <div class="logo">Aswanth <span style="color:var(--primary)">A P</span></div>
@@ -36,18 +37,19 @@
     <main>
         <section id="hero" class="hero-section">
             <div class="hero-content">
-                <span class="subtitle">Available for Hire</span>
-                <h1 class="title">AI-Augmented <br><span class="gradient-text">Software Engineer</span></h1>
-                <p class="description">
+                <span class="subtitle reveal">Available for Hire</span>
+                <h1 class="title reveal stagger-1">AI-Augmented <br><span
+                        class="gradient-text typing-target typing-cursor">Software Engineer</span></h1>
+                <p class="description reveal stagger-2">
                     Combining foundational coding expertise with advanced AI workflows to architect complex,
                     scalable web solutions faster and more efficiently.
                 </p>
-                <div class="cta-buttons">
+                <div class="cta-buttons reveal stagger-3">
                     <a href="#projects" class="btn primary">View Projects <i class="fas fa-arrow-right"></i></a>
                     <a href="#contact" class="btn secondary">Contact Me</a>
                 </div>
             </div>
-            <div class="hero-visual">
+            <div class="hero-visual reveal stagger-2 animate-float">
                 <!-- Clean Code Card Representation -->
                 <div class="code-card">
                     <div class="card-top">
@@ -75,13 +77,13 @@
 
         <section id="about" class="section">
             <div class="container">
-                <h2 class="section-title">About Me</h2>
+                <h2 class="section-title reveal">About Me</h2>
                 <div class="about-grid">
-                    <div class="about-image">
+                    <div class="about-image reveal">
                         <img src="about-avatar.png" alt="Aswanth AI Avatar"
                             style="width: 100%; max-width: 320px; border-radius: 16px; box-shadow: 0 10px 30px rgba(56, 189, 248, 0.2); border: 1px solid rgba(255, 255, 255, 0.1);">
                     </div>
-                    <div class="about-text">
+                    <div class="about-text reveal stagger-1">
                         <h3>Engineering with Intelligence</h3>
                         <p style="margin-bottom: 2rem; color: var(--text-muted); line-height: 1.7;">
                             I am a Computer Science B.Tech student who believes in the power of augmented development.
@@ -90,15 +92,15 @@
                             solving problems efficiently.
                         </p>
                         <div class="stats-grid">
-                            <div class="stat-item">
+                            <div class="stat-item reveal stagger-2">
                                 <h3>4</h3>
                                 <p>Projects Completed</p>
                             </div>
-                            <div class="stat-item">
+                            <div class="stat-item reveal stagger-3">
                                 <h3>98%</h3>
                                 <p>AI Workflow Efficiency</p>
                             </div>
-                            <div class="stat-item">
+                            <div class="stat-item reveal stagger-3">
                                 <h3>Top</h3>
                                 <p>Academic Performance</p>
                             </div>
@@ -111,26 +113,26 @@
         <section id="skills" class="section">
             <div class="container">
                 <h2 class="section-title">Technical Proficiency</h2>
-                <div class="glass-card skills-container">
+                <div class="glass-card skills-container reveal">
                     <div class="skill-group">
                         <h3><i class="fas fa-layer-group" style="color:var(--primary)"></i> Core Competencies</h3>
 
                         <div class="skill-bar">
                             <div class="skill-info"><span>HTML5 & CSS3</span> <span>95%</span></div>
                             <div class="progress-bg">
-                                <div class="progress-fill" style="width:95%"></div>
+                                <div class="progress-fill" style="width:0%" data-width="95%"></div>
                             </div>
                         </div>
                         <div class="skill-bar">
                             <div class="skill-info"><span>MySQL Database</span> <span>90%</span></div>
                             <div class="progress-bg">
-                                <div class="progress-fill" style="width:90%"></div>
+                                <div class="progress-fill" style="width:0%" data-width="90%"></div>
                             </div>
                         </div>
                         <div class="skill-bar">
                             <div class="skill-info"><span>AI-Assisted Development</span> <span>98%</span></div>
                             <div class="progress-bg">
-                                <div class="progress-fill" style="width:98%"></div>
+                                <div class="progress-fill" style="width:0%" data-width="98%"></div>
                             </div>
                         </div>
 
@@ -157,7 +159,7 @@
                 <h2 class="section-title">Featured Work</h2>
                 <div class="projects-grid">
                     <!-- Client Project -->
-                    <div class="project-card">
+                    <div class="project-card reveal stagger-1">
                         <div class="project-visual"
                             style="background-image: url('client-website.png'); background-size: cover; background-position: center;">
                             <div class="status-badge" style="background: #10b981;">Completed</div>
@@ -176,7 +178,7 @@
                     </div>
 
                     <!-- Main Project -->
-                    <div class="project-card">
+                    <div class="project-card reveal stagger-2">
                         <div class="project-visual"
                             style="background-image: url('animal-intrusion.png'); background-size: cover; background-position: center;">
                             <div class="status-badge">In Progress</div>
@@ -196,7 +198,7 @@
                     </div>
 
                     <!-- Mini Project -->
-                    <div class="project-card">
+                    <div class="project-card reveal stagger-3">
                         <div class="project-visual"
                             style="background-image: url('timetable-sys.png'); background-size: cover; background-position: center;">
                         </div>
@@ -214,7 +216,7 @@
                     </div>
 
                     <!-- Portfolio -->
-                    <div class="project-card">
+                    <div class="project-card reveal stagger-3">
                         <div class="project-visual"
                             style="background-image: url('portfolio-project.png'); background-size: cover; background-position: center;">
                         </div>
